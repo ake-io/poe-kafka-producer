@@ -8,8 +8,8 @@ locals.appWatchDogSleepTime = 5000;
 locals.next_change_id='';
 locals.PORT = process.env.PORT || 3000;
 locals.kafkaProducerName = locals.appName;
-locals.kafkaHostName = "LOCALHOST";
-locals.kafkaPort = "9093";
+locals.kafkaHostName = "http://kafka";
+locals.kafkaPort = "9092";
 locals.kafkaHost = [locals.kafkaHostName+":"+locals.kafkaPort];
 locals.swaggerJsDocOptions = {
 	definition: {
