@@ -20,3 +20,5 @@ Destroy a cluster:
 # Small Tutorial
 
 Use https://www.kafkatool.com/ with docker.host.internal to connect and view the Messages
+
+# added 4 route tests
