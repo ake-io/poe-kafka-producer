@@ -5,10 +5,10 @@ Every public or widely available application should include some form of the fol
 
 This product isn't affiliated with or endorsed by Grinding Gear Games in any way.
 
-#Pre-Requisites
+# Pre-Requisites
 install docker-compose https://docs.docker.com/compose/install/
 
-#Usage
+# Usage
 Start a cluster:
 
 - docker-compose up -d
@@ -17,6 +17,6 @@ Destroy a cluster:
 
 - docker-compose stop
 
-#Small Tutorial
+# Small Tutorial
 
 Use https://www.kafkatool.com/ with docker.host.internal to connect and view the Messages
