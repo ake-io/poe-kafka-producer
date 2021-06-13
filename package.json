@@ -20,6 +20,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "express": "^4.17.1",
+    "events-async": "^1.2.1",
     "kafkajs": ">1.0.0",
     "nodemon": ">2.0.0",
     "swagger-jsdoc": "^6.1.0",

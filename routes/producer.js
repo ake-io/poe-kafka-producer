@@ -84,6 +84,8 @@ const router = express.Router();
 	try {
         req.app.locals.active = req.body.active;
         req.app.locals.logging = req.body.logging;
+        req.app.locals.eventEmitter.emit('active-'+req.body.active,req.app.locals.producer);
+        req.app.locals.eventEmitter.emit('logging-'+req.body.logging);
         res.send({
             'active': req.app.locals.active,
             'logging': req.app.locals.logging

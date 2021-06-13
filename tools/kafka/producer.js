@@ -7,6 +7,14 @@ class ExpressAppKafka extends Kafka {
     fetching = false;
     producer = this.producer();
     next_change_id = "";
+    
+    myEventHandlerActiveTrue = function (producer) {
+        producer.wakeUp();
+      }
+    myEventHandlerActiveFalse = function (producer) {
+        producer.sleep();
+      } 
+
     async wakeUp() {
         try{
             if (!this.active){
